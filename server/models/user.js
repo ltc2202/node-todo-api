@@ -62,7 +62,7 @@ UserSchema.statics.findByToken = function(token) {
     // return new Promise((resolve, reject) => {
     //   reject();
     // });
-    return Promise.reject(e);
+    return Promise.reject();
   }
 
   return User.findOne({
